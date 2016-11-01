@@ -1,4 +1,4 @@
-package com.bwei.scratchdome;
+package com.bwei.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,6 +12,8 @@ import android.graphics.PorterDuffXfermode;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.bwei.scratchdome.R;
 
 /**
  * Created by boss on 2016/10/31.
@@ -62,7 +64,7 @@ public class ScrapeView extends View {
 
 
         //初始化被覆盖的内容bitmap
-        bpBackground = BitmapFactory.decodeResource(getResources(),R.mipmap.a);
+        bpBackground = BitmapFactory.decodeResource(getResources(), R.mipmap.a);
         //初始化用来当做覆盖用的bitmap,bpBackground.getWidth(),bpBackground.getHeight()
         bpForeground = Bitmap.createBitmap(bpBackground.getWidth(),bpBackground.getHeight(), Bitmap.Config.ARGB_8888);
 
