@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         for (int j=0;j<20;j++){
 
             lv_list.add("这是listviewitem条目"+j);
+            //
 
         }
         lv.setAdapter(new MyListAdapter(lv_list,MainActivity.this));
